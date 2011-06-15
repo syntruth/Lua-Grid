@@ -67,7 +67,7 @@ function TicTacToe()
     --[[ Check Diagonals. ]]
 
     -- Top left to bottom right.
-		diag = self:get_cells(self.diag_tl_to_br)
+    diag = self:get_cells(self.diag_tl_to_br)
 
     if diag then
       if (self:check_allowed(diag[1]) and 
@@ -77,7 +77,7 @@ function TicTacToe()
     end
 
     -- Top right to bottom left.
-		diag = self:get_cells(self.diag_tr_to_bl)
+    diag = self:get_cells(self.diag_tr_to_bl)
 
     if diag then
       if (self:check_allowed(diag[1]) and 
